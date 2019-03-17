@@ -15,10 +15,11 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 import javax.sql.DataSource;
 
-@MapperScan("com.github.candyacao.awesomeblog.dao")
+@MapperScan(basePackageClasses = com.github.candyacao.awesomeblog.dao.UserVoMapper.class)
 @SpringBootApplication
 @EnableTransactionManagement
 public class CoreApplication {
+
     @Bean(initMethod = "init", destroyMethod = "close")
     @ConfigurationProperties(prefix = "spring.datasource")
     public DataSource dataSource() {

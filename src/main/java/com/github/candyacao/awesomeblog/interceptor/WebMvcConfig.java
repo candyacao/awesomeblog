@@ -20,7 +20,7 @@ public class WebMvcConfig extends WebMvcConfigurerAdapter {
     public void addInterceptors(InterceptorRegistry registry) {
         registry.addInterceptor(baseInterceptor);
     }
-
+    
     /**
      * 添加静态资源文件，外部可以直接访问地址
      * @param registry

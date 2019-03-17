@@ -1,4 +1,4 @@
-# My Blog
+# AwesomeBlog
 
 [![Build Status](https://travis-ci.org/candyacao/awesomeblog.svg?branch=master)](https://travis-ci.org/candyacao/awesomeblog)
 ![Version 3.2.0](https://img.shields.io/badge/version-3.2.0-yellow.svg)

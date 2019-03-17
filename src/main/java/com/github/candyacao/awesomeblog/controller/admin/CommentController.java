@@ -61,7 +61,7 @@ public class CommentController extends BaseController {
 
     @PostMapping(value = "status")
     @ResponseBody
-    public RestResponseBo delete(@RequestParam Integer coid, @RequestParam String status) {
+    public RestResponseBo status(@RequestParam Integer coid, @RequestParam String status) {
         try {
             CommentVo comments = commentsService.getCommentById(coid);
             if (comments != null) {

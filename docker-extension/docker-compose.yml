@@ -9,7 +9,7 @@ mysql:
 #   - 13306:3306
 
 awesomeblog:
-  image: blog/awesomeblog
+  image: ./awesomeblog
   ports:
    - 28080:8080
   links:
