@@ -8,8 +8,8 @@ mysql:
 #  ports:
 #   - 13306:3306
 
-awesomeblog:
-  image: ./awesomeblog
+awesomenotes:
+  image: ./awesomenotes
   ports:
    - 28080:8080
   links:

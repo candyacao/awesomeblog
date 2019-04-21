@@ -78,8 +78,8 @@ LOCK TABLES `t_contents` WRITE;
 
 INSERT INTO `t_contents` (`cid`, `title`, `slug`, `created`, `modified`, `content`, `author_id`, `type`, `status`, `tags`, `categories`, `hits`, `comments_num`, `allow_comment`, `allow_ping`, `allow_feed`)
 VALUES
-	(1,'about AwesomeBlog','about',1487853610,1487872488,'### Hello World\r\n\r\nabout me\r\n\r\n### ...\r\n\r\n...',1,'page','publish',NULL,NULL,0,0,1,1,1),
-	(2,'Hello AwesomeBlog',NULL,1487861184,1487872798,'## Hello  World.\r\n\r\n> ...\r\n\r\n----------\r\n\r\n\r\n<!--more-->\r\n\r\n```java\r\npublic static void main(String[] args){\r\n    System.out.println(\"Hello AwesomeBlog.\");\r\n}\r\n```',1,'post','publish','','default',10,0,1,1,1);
+	(1,'about awesomenotes','about',1487853610,1487872488,'### Hello World\r\n\r\nabout me\r\n\r\n### ...\r\n\r\n...',1,'page','publish',NULL,NULL,0,0,1,1,1),
+	(2,'Hello awesomenotes',NULL,1487861184,1487872798,'## Hello  World.\r\n\r\n> ...\r\n\r\n----------\r\n\r\n\r\n<!--more-->\r\n\r\n```java\r\npublic static void main(String[] args){\r\n    System.out.println(\"Hello awesomenotes.\");\r\n}\r\n```',1,'post','publish','','default',10,0,1,1,1);
 
 UNLOCK TABLES;
 
@@ -119,14 +119,14 @@ LOCK TABLES `t_options` WRITE;
 
 INSERT INTO `t_options` (`name`, `value`, `description`)
 VALUES
-	('site_title','AwesomeBlog',''),
+	('site_title','awesomenotes',''),
 	('social_weibo','',NULL),
 	('social_zhihu','',NULL),
 	('social_github','',NULL),
 	('social_twitter','',NULL),
 	('site_theme','default',NULL),
-	('site_keywords','AwesomeBlog',NULL),
-	('site_description','AwesomeBlog',NULL),
+	('site_keywords','awesomenotes',NULL),
+	('site_description','awesomenotes',NULL),
 	('site_record','','备案号');
 
 UNLOCK TABLES;

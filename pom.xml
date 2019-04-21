@@ -4,12 +4,12 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.github.candyacao</groupId>
-    <artifactId>awesomeblog</artifactId>
+    <artifactId>awesomenotes</artifactId>
     <version>0.0.0-SNAPSHOT</version>
     <packaging>jar</packaging>
 
-    <name>awesomeblog</name>
-    <description>awesomeblog</description>
+    <name>awesomenotes</name>
+    <description>awesomenotes</description>
 
     <parent>
         <groupId>org.springframework.boot</groupId>
@@ -185,7 +185,7 @@
                 </executions>
                 <configuration>
                     <imageName>${docker.image.prefix}/${project.artifactId}</imageName>
-                    <dockerDirectory>${project.basedir}/docker-extension/awesomeblog</dockerDirectory>
+                    <dockerDirectory>${project.basedir}/docker-extension/awesomenotes</dockerDirectory>
                     <resources>
                         <resource>
                             <targetPath>/</targetPath>
