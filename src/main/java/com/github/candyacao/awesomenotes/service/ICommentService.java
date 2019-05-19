@@ -15,7 +15,7 @@ public interface ICommentService {
     String insertComment(CommentVo commentVo);
 
     /**
-     * 获取文章下的评论
+     * 获取笔记下的评论
      * @param cid
      * @param page
      * @param limit
@@ -24,7 +24,7 @@ public interface ICommentService {
     PageInfo<CommentBo> getComments(Integer cid, int page, int limit);
 
     /**
-     * 获取文章下的评论
+     * 获取笔记下的评论
      * @param commentVoExample
      * @param page
      * @param limit

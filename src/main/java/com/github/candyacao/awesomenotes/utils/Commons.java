@@ -139,7 +139,7 @@ public final class Commons {
     }
 
     /**
-     * 返回文章链接地址
+     * 返回笔记链接地址
      *
      * @param contents
      * @return
@@ -161,7 +161,7 @@ public final class Commons {
     }
 
     /**
-     * 返回文章链接地址
+     * 返回笔记链接地址
      *
      * @param cid
      * @param slug
@@ -232,9 +232,9 @@ public final class Commons {
     }
 
     /**
-     * 截取文章摘要
+     * 截取笔记摘要
      *
-     * @param value 文章内容
+     * @param value 笔记内容
      * @param len   要截取文字的个数
      * @return
      */
@@ -253,7 +253,7 @@ public final class Commons {
     }
 
     /**
-     * 显示文章内容，转换markdown为html
+     * 显示笔记内容，转换markdown为html
      *
      * @param value
      * @return
@@ -267,7 +267,7 @@ public final class Commons {
     }
 
     /**
-     * 显示文章缩略图，顺序为：文章第一张图 -> 随机获取
+     * 显示笔记缩略图，顺序为：笔记第一张图 -> 随机获取
      *
      * @return
      */
@@ -292,7 +292,7 @@ public final class Commons {
     }
 
     /**
-     * 获取文章第一张图片
+     * 获取笔记第一张图片
      *
      * @return
      */
@@ -318,7 +318,7 @@ public final class Commons {
     private static final String[] ICONS = {"bg-ico-book", "bg-ico-game", "bg-ico-note", "bg-ico-chat", "bg-ico-code", "bg-ico-image", "bg-ico-web", "bg-ico-link", "bg-ico-design", "bg-ico-lock"};
 
     /**
-     * 显示文章图标
+     * 显示笔记图标
      *
      * @param cid
      * @return

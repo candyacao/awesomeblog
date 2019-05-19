@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org" th:with="title='文章管理',active='article'">
+<html lang="en" xmlns:th="http://www.thymeleaf.org" th:with="title='笔记管理',active='article'">
 <header th:replace="admin/header::headerFragment(${title},${active})"></header>
 <body class="fixed-left">
 <div id="wrapper">
@@ -9,13 +9,13 @@
             <div class="container">
                 <div class="row">
                     <div class="col-sm-12">
-                        <h4 class="page-title">文章管理</h4>
+                        <h4 class="page-title">笔记管理</h4>
                     </div>
                     <div class="col-md-12">
                         <table class="table table-striped table-bordered">
                             <thead>
                             <tr>
-                                <th width="35%">文章标题</th>
+                                <th width="35%">笔记标题</th>
                                 <th width="15%">发布时间</th>
                                 <th>浏览量</th>
                                 <th>所属分类</th>
@@ -70,16 +70,16 @@
     var tale = new $.tale();
     function delPost(cid) {
         tale.alertConfirm({
-            title:'确定删除该文章吗?',
+            title:'确定删除该笔记吗?',
             then: function () {
                 tale.post({
                     url : '/admin/article/delete',
                     data: {cid: cid},
                     success: function (result) {
                         if(result && result.success){
-                            tale.alertOkAndReload('文章删除成功');
+                            tale.alertOkAndReload('笔记删除成功');
                         } else {
-                            tale.alertError(result.msg || '文章删除失败');
+                            tale.alertError(result.msg || '笔记删除失败');
                         }
                     }
                 });

@@ -22,7 +22,7 @@ public class WebConst {
     public static String AES_SALT = "0123456789abcdef";
 
     /**
-     * 最大获取文章条数
+     * 最大获取笔记条数
      */
     public static final int MAX_POSTS = 9999;
 
@@ -32,12 +32,12 @@ public class WebConst {
     public static final int MAX_PAGE = 100;
 
     /**
-     * 文章最多可以输入的文字数
+     * 笔记最多可以输入的文字数
      */
     public static final int MAX_TEXT_COUNT = 200000;
 
     /**
-     * 文章标题最多可以输入的文字个数
+     * 笔记标题最多可以输入的文字个数
      */
     public static final int MAX_TITLE_COUNT = 200;
 
@@ -57,7 +57,7 @@ public class WebConst {
     public static String SUCCESS_RESULT = "SUCCESS";
 
     /**
-     * 同一篇文章在2个小时内无论点击多少次只算一次阅读
+     * 同一篇笔记在2个小时内无论点击多少次只算一次阅读
      */
     public static Integer HITS_LIMIT_TIME = 7200;
 }

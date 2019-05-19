@@ -46,24 +46,24 @@ public class ContentServiceImpl implements IContentService {
     @Transactional
     public String publish(ContentVo contents) {
         if (null == contents) {
-            return "文章对象为空";
+            return "笔记对象为空";
         }
         if (StringUtils.isBlank(contents.getTitle())) {
-            return "文章标题不能为空";
+            return "笔记标题不能为空";
         }
         if (StringUtils.isBlank(contents.getContent())) {
-            return "文章内容不能为空";
+            return "笔记内容不能为空";
         }
         int titleLength = contents.getTitle().length();
         if (titleLength > WebConst.MAX_TITLE_COUNT) {
-            return "文章标题过长";
+            return "笔记标题过长";
         }
         int contentLength = contents.getContent().length();
         if (contentLength > WebConst.MAX_TEXT_COUNT) {
-            return "文章内容过长";
+            return "笔记内容过长";
         }
         if (null == contents.getAuthorId()) {
-            return "请登录后发布文章";
+            return "请登录后发布笔记";
         }
         if (StringUtils.isNotBlank(contents.getSlug())) {
             if (contents.getSlug().length() < 5) {
@@ -189,24 +189,24 @@ public class ContentServiceImpl implements IContentService {
     @Transactional
     public String updateArticle(ContentVo contents) {
         if (null == contents) {
-            return "文章对象为空";
+            return "笔记对象为空";
         }
         if (StringUtils.isBlank(contents.getTitle())) {
-            return "文章标题不能为空";
+            return "笔记标题不能为空";
         }
         if (StringUtils.isBlank(contents.getContent())) {
-            return "文章内容不能为空";
+            return "笔记内容不能为空";
         }
         int titleLength = contents.getTitle().length();
         if (titleLength > WebConst.MAX_TITLE_COUNT) {
-            return "文章标题过长";
+            return "笔记标题过长";
         }
         int contentLength = contents.getContent().length();
         if (contentLength > WebConst.MAX_TEXT_COUNT) {
-            return "文章内容过长";
+            return "笔记内容过长";
         }
         if (null == contents.getAuthorId()) {
-            return "请登录后发布文章";
+            return "请登录后发布笔记";
         }
         if (StringUtils.isBlank(contents.getSlug())) {
             contents.setSlug(null);

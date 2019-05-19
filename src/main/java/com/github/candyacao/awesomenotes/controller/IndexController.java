@@ -80,10 +80,10 @@ public class IndexController extends BaseController {
     }
 
     /**
-     * 文章页
+     * 笔记页
      *
      * @param request 请求
-     * @param cid     文章主键
+     * @param cid     笔记主键
      * @return
      */
     @GetMapping(value = {"article/{cid}", "article/{cid}.html"})
@@ -104,10 +104,10 @@ public class IndexController extends BaseController {
     }
 
     /**
-     * 文章页(预览)
+     * 笔记页(预览)
      *
      * @param request 请求
-     * @param cid     文章主键
+     * @param cid     笔记主键
      * @return
      */
     @GetMapping(value = {"article/{cid}/preview", "article/{cid}.html"})
@@ -223,7 +223,7 @@ public class IndexController extends BaseController {
             if (StringUtils.isNotBlank(url)) {
                 cookie("tale_remember_url", URLEncoder.encode(url, "UTF-8"), 7 * 24 * 60 * 60, response);
             }
-            // 设置对每个文章1分钟可以评论一次
+            // 设置对每个笔记1分钟可以评论一次
             cache.hset(Types.COMMENTS_FREQUENCY.getType(), val, 1, 60);
             if (!WebConst.SUCCESS_RESULT.equals(result)) {
                 return RestResponseBo.fail(result);
@@ -338,7 +338,7 @@ public class IndexController extends BaseController {
     }
 
     /**
-     * 更新文章的点击率
+     * 更新笔记的点击率
      *
      * @param cid
      * @param chits
@@ -416,7 +416,7 @@ public class IndexController extends BaseController {
     }
 
     /**
-     * 检查同一个ip地址是否在2小时内访问同一文章
+     * 检查同一个ip地址是否在2小时内访问同一笔记
      *
      * @param request
      * @param cid

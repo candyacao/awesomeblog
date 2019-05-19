@@ -24,7 +24,7 @@ public interface ISiteService {
     List<CommentVo> recentComments(int limit);
 
     /**
-     * 最新发表的文章
+     * 最新发表的笔记
      *
      * @param limit
      * @return
@@ -56,7 +56,7 @@ public interface ISiteService {
     StatisticsBo getStatistics();
 
     /**
-     * 查询文章归档
+     * 查询笔记归档
      *
      * @return
      */

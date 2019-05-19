@@ -127,7 +127,7 @@ public class MetaServiceImpl implements IMetaService {
                     MetaVo original = metaDao.selectByPrimaryKey(mid);
                     metas.setMid(mid);
                     metaDao.updateByPrimaryKeySelective(metas);
-//                    更新原有文章的categories
+//                    更新原有笔记的categories
                     contentService.updateCategory(original.getName(), name);
                 } else {
                     metas.setType(type);

@@ -53,11 +53,11 @@ public class CommentServiceImpl implements ICommentService {
             return "评论字数在5-2000个字符";
         }
         if (null == comments.getCid()) {
-            return "评论文章不能为空";
+            return "评论笔记不能为空";
         }
         ContentVo contents = contentService.getContents(String.valueOf(comments.getCid()));
         if (null == contents) {
-            return "不存在的文章";
+            return "不存在的笔记";
         }
         comments.setOwnerId(contents.getAuthorId());
         comments.setStatus("not_audit");

@@ -17,7 +17,7 @@ public interface IMetaService {
     MetaDto getMeta(String type, String name);
 
     /**
-     * 根据文章id获取项目个数
+     * 根据笔记id获取项目个数
      * @param mid
      * @return
      */
@@ -48,7 +48,7 @@ public interface IMetaService {
     void saveMeta(String type, String name, Integer mid);
 
     /**
-     * 根据类型查询项目列表，带项目下面的文章数
+     * 根据类型查询项目列表，带项目下面的笔记数
      * @return
      */
     List<MetaDto> getMetaList(String type, String orderby, int limit);

@@ -8,19 +8,19 @@ import com.github.candyacao.awesomenotes.model.Vo.ContentVo;
 public interface IContentService {
 
 //    /**
-//     * 保存文章
+//     * 保存笔记
 //     * @param contentVo contentVo
 //     */
 //    void insertContent(ContentVo contentVo);
 
     /**
-     * 发布文章
+     * 发布笔记
      * @param contents
      */
     String publish(ContentVo contents);
 
     /**
-     *查询文章返回多条数据
+     *查询笔记返回多条数据
      * @param p 当前页
      * @param limit 每页条数
      * @return ContentVo
@@ -29,7 +29,7 @@ public interface IContentService {
 
 
     /**
-     * 根据id或slug获取文章
+     * 根据id或slug获取笔记
      *
      * @param id id
      * @return ContentVo
@@ -44,7 +44,7 @@ public interface IContentService {
 
 
     /**
-     * 查询分类/标签下的文章归档
+     * 查询分类/标签下的笔记归档
      * @param mid mid
      * @param page page
      * @param limit limit
@@ -70,20 +70,20 @@ public interface IContentService {
      */
     PageInfo<ContentVo> getArticlesWithpage(ContentVoExample commentVoExample, Integer page, Integer limit);
     /**
-     * 根据文章id删除
+     * 根据笔记id删除
      * @param cid
      */
     String deleteByCid(Integer cid);
 
     /**
-     * 编辑文章
+     * 编辑笔记
      * @param contents
      */
     String updateArticle(ContentVo contents);
 
 
     /**
-     * 更新原有文章的category
+     * 更新原有笔记的category
      * @param ordinal
      * @param newCatefory
      */
